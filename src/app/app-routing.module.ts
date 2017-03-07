@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { KeyboardComponent } from './shared/keyboard/keyboard.component';
+
 const routes: Routes = [
   {
     path: '',
+    component: KeyboardComponent,
     children: []
-  }
+  },
+
 ];
 
 @NgModule({

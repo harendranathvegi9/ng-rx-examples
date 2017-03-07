@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule, RequestOptions } from '@angular/http';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -12,9 +12,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
