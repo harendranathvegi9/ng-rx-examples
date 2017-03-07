@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpModule, RequestOptions } from '@angular/http';
 import { NgModule } from '@angular/core';
 
@@ -12,6 +13,7 @@ import { CoreModule } from './core/core.module';
   ],
   imports: [
     BrowserModule,
+    FlexLayoutModule,
     HttpModule,
     AppRoutingModule,
     CoreModule,
